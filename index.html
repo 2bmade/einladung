@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einladung zur Party!</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            font-family: "Comic Sans MS", cursive;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .invitation-card {
+            background-color: #ffffff;
+            border: 5px solid #ff0000;
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        h1 {
+            color: #ff00ff;
+            font-size: 3em;
+            text-shadow: 3px 3px 0 #00ffff;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            font-size: 1.2em;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .gif-container {
+            margin: 20px 0;
+        }
+
+        .gif-container img {
+            max-width: 200px;
+            margin: 10px;
+        }
+
+        .rsvp-button {
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 25px;
+            cursor: pointer;
+            font-family: "Comic Sans MS", cursive;
+            margin-top: 20px;
+            transition: transform 0.3s;
+        }
+
+        .rsvp-button:hover {
+            transform: scale(1.1);
+        }
+
+        .marquee {
+            background-color: #ffff00;
+            color: #ff0000;
+            padding: 10px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation-card">
+        <h1>🎉 Ich möchte gerne mit dir feiern! 🎉</h1>
+        
+        <div class="gif-container">
+            <img src="https://media.giphy.com/media/3orieMXgJuFgeCKsso/giphy.gif" alt="Party GIF">
+        </div>
+
+        <div class="content">
+            <p>Hey! Du bist herzlich eingeladen zur Party des Jahres! 🎈</p>
+            
+            <div class="marquee">
+                <marquee>🎵 Musik 🎵 Tanzen 🎵 Spaß 🎵</marquee>
+            </div>
+
+            <p><strong>Wann:</strong> 26. Juli 2025</p>
+            <p><strong>Wo:</strong> Kurt-Hoffmann-Str. 31, Zeuthen</p>
+            <p><strong>Was mitbringen:</strong> Deine gute Laune und etwas zu knabbern! 🍕</p>
+            <p>Im Garten ist Platz zum Zelten 🏕️</p>
+        </div>
+
+        <div class="gif-container">
+            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHBuZHFvOTVvZjVjYTUwYmpsMDlmbWl2enhvOWVlM2p4OXk5ZnozbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2t9jvKZfOdwTLeLKU1/giphy.gif" alt="Dancing GIF">
+        </div>
+
+        <button class="rsvp-button" onclick="window.location.href='mailto:party@soundfront.de?subject=RSVP%20zur%20Party&body=Ich%20komme%20zur%20Party%20am%2026.%20Juli%202025!'">
+            Hier RSVP senden!
+        </button>
+    </div>
+</body>
+</html> 
